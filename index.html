@@ -1,3 +1,16 @@
+<script>
+  (function() {
+    // 請將 'myPassword123' 改成你自己想設定的密碼
+    var secret = "myPassword123";
+    var input = prompt("請輸入訪問密碼：");
+    
+    if (input !== secret) {
+      alert("密碼錯誤，無法造訪此網站！");
+      document.body.innerHTML = "<h1 style='text-align:center;margin-top:50px;'>權限不足，無法瀏覽</h1>";
+      window.stop();
+    }
+  })();
+</script>
 <!DOCTYPE html>
 <html lang="zh-Hant"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
